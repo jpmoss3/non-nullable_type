@@ -13,13 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mjamelot/MutationIntensive.git"
+    "url": "git+https://github.com/jpmoss3/non-nullable_type.git"
   },
   "keywords": [
-    "prisma",
+    "GraphQL",
+    "Prisma",
     "non-nullable"
   ],
-  "author": "jpmoss",
+  "author": "jpmoss3",
   "license": "ISC",
   "dependencies": {
     "graphql-request": "^1.6.0",
