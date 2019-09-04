@@ -1,0 +1,28 @@
+{
+  "name": "non-nullable",
+  "version": "1.0.0",
+  "description": "Cannot return null for non-nullable type",
+  "main": "index.js",
+  "scripts": {
+    "prisma:deploy": "prisma deploy",
+    "prisma:token": "prisma token",
+    "prisma:delete": "prisma delete --force",
+    "prisma:up": "docker-compose -f docker-compose.yml up -d",
+    "prisma:down": "npm run prisma:delete && docker-compose -f docker-compose.yml down && docker volume prune -f",
+    "test": "node index.js && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjamelot/MutationIntensive.git"
+  },
+  "keywords": [
+    "prisma",
+    "non-nullable"
+  ],
+  "author": "jpmoss",
+  "license": "ISC",
+  "dependencies": {
+    "graphql-request": "^1.6.0",
+    "prisma": "1.27.3"
+  }
+}

@@ -1,0 +1,11 @@
+type Foo {
+  id: ID! @unique
+  name: String!
+  bar: Bar @relation(name:"BetweenBarAndFoo")
+}
+
+type Bar {
+  id: ID! @unique
+  name: String!
+  foo: Foo! @relation(name:"BetweenBarAndFoo" onDelete:CASCADE)
+}
